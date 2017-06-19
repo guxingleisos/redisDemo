@@ -15,9 +15,10 @@ public class MasterSlaverTest {
 
         jedis_S.slaveof("192.168.31.128",6380);
 
-        jedis_M.set("key1","11112");
+        jedis_M.set("key1","112335");
 
         String result=jedis_S.get("key1");
+		System.out.println(result)
    
     }
 }
